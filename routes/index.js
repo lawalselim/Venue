@@ -10,23 +10,23 @@ var LocalStrategy = require('passport-local').Strategy;
 
 
 router.get('/', function (req, res, next) {
-    res.render('/main/index', { title: 'Venue' });
+    res.render('main/index', { title: 'Venue' });
 });
 
 router.get('/signin', function (req, res, next) {
-    res.render('/main/signin', { title: 'SignIn' });
+    res.render('main/signin', { title: 'SignIn' });
 });
 
 router.get('/signup', function (req, res, next) {
-    res.render('/main/signup', { title: 'Sign Up' });
+    res.render('main/signup', { title: 'Sign Up' });
 });
 
 router.get('/venue', function (req, res, next) {
-    res.render('/main/venue', { title: 'Venue pages' });
+    res.render('main/venue', { title: 'Venue pages' });
 });
 
 router.get('/profile', function (req, res, next) {
-    res.render('/main/profile', { title: 'User Profile' });
+    res.render('main/profile', { title: 'User Profile' });
 });
 
 
